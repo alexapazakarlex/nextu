@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hoja de vida</title>
+  </head>
+  <body>
+    <header>
+      <svg width="145px" heigth="80px" viewBox="0 0 145 80">
+          <image xlink:href="image/logo.svg" width="145" heigth="80"></image>
+      </svg>
+    </header>
+    <section>
+      <h1>Hoja de Vida</h1>
+      <h2>Alexander Apaza</h2>
+      <h3>Fecha Nac.:07/12/1984</h3>
+      <h3>Lugar Nac.:Puno-Perú</h3>
+      <nav>
+        <ul>
+          <li><a href="index.html">inicio</a></li>
+          <li><a href="educacion.html">Educación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <h2>Educación</h2>
+      <table border="1">
+        <tr>
+          <th>año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>Next University</td>
+          <td>Perú</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>Universidad Nacional del Altiplano-Maestria</td>
+          <td>Perú-Puno</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td>Universidad Nacional del Altiplano-titulo</td>
+          <td>Perú-Puno</td>
+          <td>Si</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+        <h2>Agregar estudios</h2>
+      <!--formulario de estudios -->
+      <form title="Agregar Estudios" class="estudios" method="post">
+        <fieldset>
+          <legend>Agregar Estudios</legend>
+          <div>
+            <label for="anio">Año:</label>
+            <select name="anio">
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="institucion">*Institución:</label>
+            <input type="text" name="institucion" required></input>
+          </div>
+          <br>
+          <div>
+            <label for="lugar">Lugar:</label>
+            <textarea name="lugar" rows="5" cols="50"></textarea>
+          </div>
+          <br>
+          <div>
+            <label for="culmino">¿Culminó?:</label>
+            <b>Si:</b><input type="radio" name="seleccion">
+            <b>No:</b><input type="radio" name="seleccion">
+          </div>
+          <br>
+          <div>
+            <input type="submit" name="enviar" value="Enviar">
+          </div>
+
+        </fieldset>
+      </form>
+      <!--fin de formulario de estudios -->
+    </section>
+
+    <footer>
+      <p>Todos lo derechos reservados - @2018</p>
+      <ul>
+        <li><strong>Empresa:</strong>Yarasoft</li>
+        <li><strong>E-mail:</strong>alexapaza@outlook.com</li>
+        <li><strong>facebook:</strong><a href="https://www.facebook.com/alexander.apaza.amar" target="_blank">Facebook</a></li>
+      </ul>
+
+    </footer>
+  </body>
+</html>
